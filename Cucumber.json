@@ -2,8 +2,8 @@
     "default":{
         "require":[
             "steps/*.js",
-            "page/*js",
-            "utility/*js"
+            "page/*.js",
+            "utility/*.js"
         ]
     }
 }

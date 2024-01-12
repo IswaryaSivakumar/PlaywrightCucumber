@@ -12,6 +12,10 @@ class LoginPage{
         await global.page.locator('//input[@id="username"]').fill(process.env.WEB_USERNAME);
 
     }
+    async enterPassword(){
+        await global.page.locator('//input[@id="password"]').fill(process.env.WEB_PASSWORD);
+    }
+
     async clickLoginButton(){
         await global.page.locator('//input[@id="login"]').click();
     }
