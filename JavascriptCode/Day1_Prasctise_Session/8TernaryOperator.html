@@ -1,0 +1,35 @@
+<html>
+<head>
+   <title>Demo Web Page</title>
+</head>
+<body>
+   <center>
+      <h1>Welcome to playwright Training!!</h1>
+   </center>
+   <br>
+   <br>
+   <br>
+   <p id="para1">Input your age
+   </p>
+
+<input id="val1"/>
+
+<button onclick="fun1()">Click</button>
+
+<p id="para2">
+</p>
+
+<script>
+
+   function fun1() {
+
+     var age=document.getElementById("val1").value;
+     var voteable=(age<18)? "Too Young": "Old Enough";
+     document.getElementById("para2").innerHTML=voteable;
+
+   }
+     
+</script>
+  
+</body>
+</html>

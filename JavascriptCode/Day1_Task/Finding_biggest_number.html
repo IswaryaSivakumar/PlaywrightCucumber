@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+        Get The Multiplication Table
+</title>
+</head>
+<body>
+<center>
+<h1>Welcome to Training</h1>
+</center>
+<br>
+<br>
+<p id="para1">Greater and Smaller number</p>
+<input id="val1"/>
+<input id="val2"/>
+<button onclick="fun1()">click</button>
+<p id="para2"></p>
+
+<script>
+function fun1(){
+ 
+   var num1=document.getElementById("val1").value;
+   var num2=document.getElementById("val2").value;
+   //var text="";
+   var result ="";
+        if (num1 > num2) {
+      	result= num1+" is Greater Number";
+      	} else if (num2 > num1) {
+    	result= num2+" is Greater Number";
+  	} else {
+    	result= num1+" and "+num2+"--Both numbers are equal";
+	}
+document.getElementById("para2").innerHTML=result;
+ 
+   
+}
+</script>
+
+</body>
+</html>

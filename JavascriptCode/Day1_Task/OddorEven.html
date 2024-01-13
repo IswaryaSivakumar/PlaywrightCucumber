@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+        Get The Multiplication Table
+</title>
+</head>
+<body>
+<center>
+<h1>Welcome to Training</h1>
+</center>
+<br>
+<br>
+<p id="para1">Odd or Even</p>
+
+<input id="val1"/>
+<input id="val2"/>
+
+<button onclick="fun1()">Generate</button>
+<p id="para2"></p>
+
+<script>
+function fun1(){
+ 
+   var no=document.getElementById("val1").value;
+   var limit=document.getElementById("val2").value;
+   var text="";
+   var result ="";
+   for (var i = no; i <= limit; i++) {
+          if(i%2==0){
+           result="even";
+ 
+             }
+           else{
+             result ="odd";
+            }
+ 
+      text += i+"="+result+ "<br>";
+   }
+   document.getElementById("para2").innerHTML=text; 
+}
+</script>
+
+</body>
+</html>

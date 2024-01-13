@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Welcome to Expleo</title>
+</head>
+<body>
+<p>Welcome to playwright training</p>
+<script>
+ 
+const car = ["hyndai","kia","honda","Marithi"]
+document.write(car+"<br>");
+ 
+const mobile =[];
+mobile[0]="samsung";
+mobile[1]="Iphone";
+mobile[2]="poco";
+document.write(mobile+"<br>");
+ 
+const laptop = new Array("Dell","HP","Mac");
+document.write(laptop+"<br>");
+document.write(laptop[1]);
+ 
+for(let i=0 ; i<laptop.length; i++){
+document.write("<br>"+laptop[i]+"<br>");
+ 
+}
+ 
+laptop[2]="acer";
+for(let i=0 ; i<laptop.length; i++){
+document.write("<br>"+laptop[i]+"<br>");
+ 
+}
+ 
+const person = {firstName:"Sai",lastName:"Goutham",age:28};
+document.write(person.lastName+"<br>");
+document.write(person[person.length]+"<br>");
+document.write(person.length+"<br>");
+document.write(person.age+"<br>");
+ 
+ 
+//document.write(Array.isArray(person)+"<br>");
+ 
+ 
+const array1 = [];
+array1[0]=laptop;
+array1[1]=car;
+ 
+//document.write(length(array1));
+document.write(laptop[laptop.length-1]+"<br>");
+document.write(car[car.length-1]+"<br>");
+ 
+laptop.push("Macpro");
+document.write(laptop+"<br>");
+ 
+ 
+laptop[laptop.length]="asus";
+document.write(laptop+"<br>");
+ 
+laptop[8]="vivo"
+document.write(laptop);
+ 
+laptop[10]="mac1";
+document.write(laptop+"<br>");
+ 
+document.write(laptop instanceof Array);
+document.write("<br>");
+document.write(laptop.toString()+"<br>");
+document.write(laptop.join("*")+"<br>");
+document.write(laptop[-1]+"<br>");
+document.write(laptop.at(-1)+"<br>");
+ 
+ 
+document.write(laptop+"<br>");
+laptop.pop();
+document.write(laptop+"<br>");
+laptop.shift();
+document.write(laptop+"<br>");
+document.write(laptop[0]+"<br>");
+ 
+laptop.unshift("mac1");
+document.write(laptop+"<br>");
+ 
+ 
+document.write(laptop.unshift("vi")+"<br>");
+document.write(laptop+"<br>");
+ 
+document.write(laptop.concat(car)+"<br>");
+document.write(laptop+"<br>");
+ 
+document.write(laptop.concat(car,mobile)+"<br>");
+ 
+document.write(laptop.concat("PlayWright")+"<br>");
+ 
+ 
+//document.write(car.copyWithin(2,0)+"<br>");
+//document.write(car.copyWithin(2,0,1)+"<br>");
+ 
+car.splice(2,0,"ford","Renault");
+document.write(car+"<br>");
+ 
+ 
+car.splice(2,1,"ford","Renault");
+document.write(car+"<br>");
+ 
+car.splice(3,1);
+document.write(car+"<br>");
+ 
+const splicedcar = car.toSpliced(2,1);
+document.write(splicedcar+"<br>");
+document.write(car+"<br>");
+ 
+const laptops = laptop.slice(2);
+document.write(laptops+"<br>");
+ 
+const laptops1 = laptop.slice(3,6);
+document.write(laptops1+"<br>");
+ 
+document.write(laptop+"<br>");
+ 
+ 
+document.write(car.indexOf("honda")+"<br>");
+ 
+let position = car.indexOf("honda")+1;
+document.write(position+"<br>");
+ 
+document.write(car.indexOf("honda",5)+"<br>");
+document.write(car.indexOf("honda",3)+"<br>");
+ 
+document.write(car.indexOf("honda",-3)+"<br>");
+ 
+car.push("honda");
+document.write(car+"<br>");
+ 
+document.write(car.indexOf("honda")+"<br>");
+document.write(car.lastIndexOf("honda")+"<br>");
+ 
+ 
+document.write(car.lastIndexOf("honda",-2)+"<br>");
+ 
+ 
+document.write(car.includes("jaquar")+"<br>");
+document.write(car.includes("ford")+"<br>");
+ 
+const number = [1,2,5,6,7];
+ 
+let first = number.find(fun1);
+let findex = number.findIndex(fun1);
+document.write(first+"<br>");
+function fun1(value,index,Array){
+return value>5;
+ 
+}
+ 
+document.write(findex+"<br>");
+ 
+ 
+ 
+ 
+</script>
+</body>
+</html>

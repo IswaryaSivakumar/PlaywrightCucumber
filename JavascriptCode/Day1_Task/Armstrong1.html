@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Get The Multiplication Table</title>
+</head>
+<body>
+<center>
+<h1>Welcome to Training</h1>
+</center>
+<br>
+<br>
+<p id="para1">Armstrong</p>
+<input id="val1"/>
+<button onclick="fun1()">Generate</button>
+<p id="para2"></p>
+
+<script>
+function fun1(){
+    var a = document.getElementById("val1").value;
+    var n = 0;
+    var i = 0;
+    var j = 0;
+    var originalNumber = a; // Store the original number before modification
+    while(a > 0) {
+        i = a % 10;
+        j = j + (i * i * i); // Fix the multiplication error here
+        a = Math.floor(a / 10); // Use Math.floor to get integer division
+    }
+    if(originalNumber == j) {
+        document.getElementById("para2").innerHTML = "The number is an Armstrong number."; 
+    } else {
+        document.getElementById("para2").innerHTML = "The number is not an Armstrong number."; 
+    }
+}
+</script>
+
+</body>
+</html>
